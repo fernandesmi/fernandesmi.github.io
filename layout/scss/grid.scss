@@ -337,6 +337,7 @@
 	margin: 0 auto;
 }
 
+.container-xlg,
 .container-lg,
 .container-md,
 .container-ph,
@@ -443,4 +444,25 @@
 		@extend %container-lg;
 	}
 	@include generate-cols(lg);
+}
+
+@media only screen and(min-width: $xlg) {
+	.container-xlg,
+	.container-md,
+	.container-ph,
+	.container-sm {
+		width: $xlg;
+	}
+
+	%container-xlg {
+		width: $xlg;
+	}
+
+	%container,
+	%container-md,
+	%container-ph,
+	%container-sm {
+		@extend %container-xlg;
+	}
+	@include generate-cols(xlg);
 }
