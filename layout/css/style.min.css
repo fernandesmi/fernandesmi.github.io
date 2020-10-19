@@ -1,0 +1,20 @@
+body {
+  display: none; }
+
+body, * {
+  font-family: Titillium Web; }
+
+.box {
+  background-color: white; }
+
+.pitchbar {
+  background-color: #353535; }
+  .pitchbar a {
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 10px;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .pitchbar a {
+        font-size: 16px; } }

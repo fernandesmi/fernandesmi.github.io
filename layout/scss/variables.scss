@@ -1,0 +1,46 @@
+
+$ph: 30rem; //480
+$sm: 48rem; //768
+$md: 80rem; //1280
+$lg: 100rem; //1600
+
+$qtd-col: 12;
+$grid-gutter: 1rem; //15px
+$base-gutter: ($grid-gutter / 2);
+
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 1280px,
+  'desktop': 1600px
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  ph: $ph,
+  sm: $sm,
+  md: $md,
+  lg: $lg
+) !default;
+
+$color: (
+  c-bg: #FAFAFA,
+  c-border-modal: #C4C4C4,
+  c-font:#353535,
+  c-font-secondary: #4A4441,
+  c-light-gray: #EFEFEF,
+  c-modal-font-1: #464B54,
+  c-modal-font-2: #787D83,
+  c-white: #FFFFFF,
+  c-yellow:#FAA500
+) !default;
+
+
+$c-bg: map-get($color, 'c-bg');
+$c-border-modal: map-get($color, 'c-border-modal');
+$c-font: map-get($color, 'c-font');
+$c-font-secondary: map-get($color, 'c-font-secondary');
+$c-light-gray: map-get($color, 'c-light-gray');
+$c-white: map-get($color, 'c-white');
+$c-yellow: map-get($color, 'c-yellow');
+$c-modal-font-1: map-get($color, 'c-modal-font-1');
+$c-modal-font-2: map-get($color, 'c-modal-font-2');
