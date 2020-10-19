@@ -2068,6 +2068,17 @@ input {
       @media (min-width: 1280px) {
         .banner__main .slick-arrow.prev {
           left: 0; } }
+  @media (min-width: 1280px) {
+    .banner__main .banner__list--mobile {
+      display: none; } }
+  .banner__main .banner__list--desktop {
+    display: none; }
+    @media (min-width: 1280px) {
+      .banner__main .banner__list--desktop {
+        display: block; } }
+
+.banner__list li img {
+  width: 100%; }
 
 .banner__list .slick-dots {
   bottom: 16px; }
@@ -2309,8 +2320,10 @@ input {
         .footer__row--social .footer__column {
           margin-bottom: 0; } }
       .footer__row--social .footer__column .footer__list {
-        display: flex;
-        justify-content: flex-start; }
+        display: flex; }
+        @media (min-width: 768px) {
+          .footer__row--social .footer__column .footer__list {
+            justify-content: flex-start; } }
         .footer__row--social .footer__column .footer__list-item {
           color: #FFFFFF;
           font-size: 10px; }

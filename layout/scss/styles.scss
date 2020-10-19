@@ -337,10 +337,31 @@
             }
 
         }
+        .banner__list {
 
+            &--mobile {
+                @include media(">=desktop") {
+                    display: none;
+                }
+            }
+            &--desktop {
+                display: none;
+
+                @include media(">=desktop") {
+                    display: block;
+                }
+            }
+        }
     }
 
     &__list {
+
+        li {
+            img {
+                width: 100%;
+            }
+        }
+        
         .slick-dots {
             bottom: 16px;
 
@@ -362,7 +383,6 @@
                         width: 16px;
                     }
                 }
-
             }
         }
 
@@ -739,7 +759,10 @@
                 .footer {
                     &__list {
                         display: flex;
-                        justify-content: flex-start;
+
+                        @include media(">=tablet") {
+                            justify-content: flex-start;   
+                        }
 
                         &-item {
                             color: $c-white;

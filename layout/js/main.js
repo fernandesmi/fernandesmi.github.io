@@ -10,6 +10,17 @@ $(document).ready(function() {
       })
     }
 
+    var bannerSliderMob = $('#banner-slider-mobile');
+
+    if (bannerSliderMob.length) {
+        bannerSliderMob.slick({
+        autoplay: false,
+        dots: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+      })
+    }
+
     var benefitsList = $('#benefits-slider');
 
     if(benefitsList.length) {
