@@ -114,10 +114,15 @@
                 background: $c-yellow;
                 border-radius: 8px;
                 color: $c-white;
+                cursor: pointer;
                 font-size: rem(14);
                 margin: -16px;
                 height: 40px;
                 width: 119px;
+
+                &:hover {
+                    background-color: darken($c-yellow, 2%);
+                }
             }
 
             &__wrapper {
@@ -573,6 +578,10 @@
                 font-size: rem(16);
                 justify-content: center;
                 height: 35px;
+
+                &:hover {
+                    background-color: darken($c-yellow, 2%);
+                }
             }
         }
     }
@@ -632,6 +641,7 @@
         background: $c-yellow;
         border-radius: 8px;
         color: $c-white;
+        cursor: pointer;
         font: {
             size: rem(14);
             weight: bold;
@@ -640,6 +650,10 @@
         height: 26px;
         margin-left: 15px;
         padding: 0 20px;
+
+        &:hover {
+            background-color: darken($c-yellow, 2%);
+        }
 
         @include media(">=tablet") {
             height: 41px;
